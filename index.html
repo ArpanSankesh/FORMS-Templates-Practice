@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Practice</title>
+    <title>Form Templates</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,19 +30,52 @@
 
                         <div class="heading">
                             <h1>Welcome Back</h1>
-                            <p>Not registered yet? <b><a href="">Sign up</a></b></p>
+                            <p>Not registered yet? <b><a href="" class="toggle">Sign up</a></b></p>
                         </div>
 
                         <div class="form-content">
-                            <div class="input-wrapper">
-                                <input type="text" minlength="4" id="name" class="input-feild" autocomplete="off" required>
-                                <label for="name">Name</label>
+                            <div class="input-wrap">
+                                <input type="text" minlength="4"  class="input-feild" autocomplete="off" required>
+                                <label  class="input-lable">Name</label>
                             </div>
-                            <div class="input-wrapper">
-                                <input type="password" minlength="4" id="name" class="input-feild" autocomplete="off" required>
-                                <label for="name">Password</label>1`    awzsezzs65rdx
+                            <div class="input-wrap">
+                                <input type="password" minlength="4"  class="input-feild" autocomplete="off" required>
+                                <label  class="input-lable">Password</label>
                             </div>
                             <input type="submit" value="Sign In" class="sign-in-btn">
+                            <p class="forgot-pass-txt">Frogotten your password or your Login details?<a href="" class="toggle"> Get help</a> signin in</p>
+                        </div>
+                    </form>
+
+                    <form action="index.html" autocomplete="off" class="sign-up-form">
+
+                        <div class="logo">
+                            <img src="asset/logo.png" alt="LOGO">
+                            <h3>easyclass</h3>
+                        </div>
+
+                        <div class="heading">
+                            <h1>Get Started</h1>
+                            <p>Already have an account? <b><a href="" class="toggle">Sign in</a></b></p>
+                        </div>
+
+                        <div class="form-content">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4"  class="input-feild" autocomplete="off" required>
+                                <label  class="input-lable">Name</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="email" minlength="4"  class="input-feild" autocomplete="off" required>
+                                <label  class="input-lable">Email</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password" minlength="4"  class="input-feild" autocomplete="off" required>
+                                <label  class="input-lable">Password</label>
+                            </div>
+                            <input type="submit" value="Sign In" class="sign-up-btn">
+                            <p class="forgot-pass-txt2">By singning up, I agree to the
+                            <a href="" class="toggle toggle2"> Terms of Services </a>and 
+                            <a href="" class="toggle toggle2"> Privacy Policy</a> signin in</p>
                         </div>
                     </form>
                 </div>
@@ -54,5 +87,6 @@
         </div>
       </section>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

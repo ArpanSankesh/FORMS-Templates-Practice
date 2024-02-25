@@ -31,6 +31,10 @@ section{
     justify-content: center;
 }
 
+.Template-1 input{
+    font-family: "Roboto", sans-serif;
+}
+
 .container{
     position: relative;
     width: 100%;
@@ -57,12 +61,31 @@ section{
     width: 45%;
     height: 100%;
     padding: 4vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
+form{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+form.sign-up-form{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sign-in-form{
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .logo{
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     gap: 0.5vw;
 }
 
@@ -76,7 +99,6 @@ section{
 }
 
 .heading{
-    margin-top: 3vw;
     width: 100%;
     height: 10vw;
     display: flex;
@@ -90,12 +112,122 @@ section{
 .heading p{
     font-size: 1vw;
     font-weight: 400;
-    color: #63626270;
+    color: #bababa;
 }
 
-.heading a{
+.toggle{
     color: #000;
     text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.toggle:hover{
+    color: #8371fd;
+}
+
+.input-wrap{
+    position: relative;
+    margin-bottom: 1vw;
+    height: 37px;
+    margin-bottom: 2rem;
+    color: #bababa;
+}
+
+.input-feild{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: none;
+    font-size: 1vw;
+    border-bottom: 2px solid #bababa;
+    transition: 0.4s;
+    
+}
+.input-lable{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.input-feild.active{
+    border-bottom-color:#000;
+}
+  
+.input-feild.active + .input-lable{
+    font-size: 0.9vw;
+    top:-2px;
+}
+
+.sign-in-btn{
+    width: 100%;
+    height: 3vw;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+    margin-bottom: 2vw;
+    transition: 0.2s;
+}
+
+.sign-in-btn:hover{
+    background-color: #8371fd;
+}
+
+.forgot-pass-txt{
+    font-size: 1vw;
+    color: #bababa;
+    line-height: 1.4vw;
+}
+
+
+/* -------------   SIGN UP------------------------ */
+
+.sign-up-form{
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sign-up-btn{
+    width: 100%;
+    height: 3vw;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+    margin-bottom: 2vw;
+    transition: 0.2s;
+}
+
+.sign-up-btn:hover{
+    background-color: #8371fd;
+}
+
+.forgot-pass-txt2{
+    font-size: 0.8vw;
+    color: #bababa;
+    line-height: 1vw;
+}
+
+.toggle2{
+    color: #bababa;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.toggle2:hover{
+    color: #8371fd;
 }
 
 
