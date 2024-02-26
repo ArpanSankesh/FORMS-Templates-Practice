@@ -260,6 +260,7 @@ form.sign-up-form{
     transition: 0.8s ease-in-out;
     display: grid;
     grid-template-rows: auto 1fr;
+    overflow: hidden;
 }
 
 .image-wrapper{
@@ -273,11 +274,25 @@ form.sign-up-form{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     opacity: 0;
+    transition: opacity 0.3s, transform 0.5s;
+}
+
+.img-1{
+    transform: translate(0, -50px);
+}
+.img-2{
+    transform: scale(0.4);
+}
+.img-3{
+    transform: scale(0.4) rotate(90deg);
+    
 }
 
 .image.show{
     opacity: 1;
+    transform: none;
 }
+
 
 .text-slider{
     display: flex;
@@ -288,12 +303,12 @@ form.sign-up-form{
 }
 
 .text-wrap{
-    max-height: 2vw;
+    max-height: 2.2vw;
     overflow: hidden;
 }
 
 .text-wrap h2{
-    font-size: 2vw;
+    font-size: 1.8vw;
     line-height: 2vw;
 }
 
@@ -303,6 +318,7 @@ form.sign-up-form{
     align-items: center;
     justify-content: center;
     transform: translateY(0);
+    transition: 0.5s;
 }
 
 .bullets{
@@ -312,6 +328,8 @@ form.sign-up-form{
     gap:0.5vw;
 }
 
+
+
 .bullets span{
     display: block;
     width: 0.6vw;
@@ -319,6 +337,7 @@ form.sign-up-form{
     background-color: #aaa;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .bullets span.active{
@@ -326,3 +345,7 @@ form.sign-up-form{
     background-color: #000;
     border-radius: 1vw;
 }
+
+/* @media (max-width:850px) {
+    
+} */

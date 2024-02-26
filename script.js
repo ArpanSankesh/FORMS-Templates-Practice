@@ -1,6 +1,8 @@
 const inputs = document.querySelectorAll(".input-feild");
-const toggle_btn = document.querySelectorAll(".toggle");
+const toggleBtn = document.querySelectorAll(".toggle");
 const main = document.querySelector(".wrapper");
+const bullets = document.querySelectorAll(".bullets span");
+const image = document.querySelectorAll(".image");
 
 inputs.forEach((inp) => {
   inp.addEventListener("focus", () => {
@@ -12,8 +14,34 @@ inputs.forEach((inp) => {
   });
 });
 
-toggle_btn.forEach((btn ) => {
+toggleBtn.forEach((btn ) => {
     btn.addEventListener('click',() => {
         main.classList.toggle('sign-up-mode');
     });
+});
+
+let moveBullets = function(){
+  let index = this.dataset.value;
+  console.log(index);
+  let currentImage = document.querySelector(`.img-${index}`)
+  image.forEach((img) => img.classList.remove('show'));
+  currentImage.classList.add('show');
+
+  let textSlider = document.querySelector('.text-group');
+  textSlider.style.transform = `translateY(${-(index - 1) * 2 }vw)`
+
+
+  console.log(index);
+  bullets.forEach(bull => {
+    bull.classList.remove('active')
+  });
+  this.classList.add('active')
+};
+
+
+
+
+
+bullets.forEach(bull => {
+  bull.addEventListener('click', moveBullets)
 });
