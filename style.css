@@ -303,13 +303,13 @@ form.sign-up-form{
 }
 
 .text-wrap{
-    max-height: 2.2vw;
+    max-height: 2.2rem;
     overflow: hidden;
 }
 
 .text-wrap h2{
-    font-size: 1.8vw;
-    line-height: 2vw;
+    font-size: 1rem;
+    line-height: 2.2rem
 }
 
 .text-group{
@@ -320,6 +320,11 @@ form.sign-up-form{
     transform: translateY(0);
     transition: 0.5s;
 }
+.text-group h2 {
+    line-height: 2.2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
 
 .bullets{
     display: flex;
@@ -327,7 +332,6 @@ form.sign-up-form{
     justify-content: center;
     gap:0.5vw;
 }
-
 
 
 .bullets span{
@@ -347,5 +351,125 @@ form.sign-up-form{
 }
 
 @media (max-width:850px) {
+    .container{
+        height: auto;
+        max-width: 60vw;
+        overflow: hidden;
+    }
+
+    .inner-box{
+        position: static;
+        width: revert;
+        height: revert;
+        transform: none;
+
+    }
+
+    .left-container{
+        position: revert;
+        width: 100%;
+        height: auto;
+    }
+
+    .right-container{
+        position: revert;
+        width: 100%;
+        height: auto;
+    }
+
+    .image{
+        display: none;
+    }
+
+    form {
+        max-width: revert;
+        padding: 1.5rem 2.5rem 2rem;
+        transition: transform 0.8s ease-in-out, opacity 0.45s linear;
+      }
     
+      .heading {
+        margin: 2rem 0;
+      }
+    
+      form.sign-up-form {
+        transform: translateX(100%);
+      }
+    
+      .wrapper.sign-up-mode form.sign-in-form {
+        transform: translateX(-100%);
+      }
+    
+      .wrapper.sign-up-mode form.sign-up-form {
+        transform: translateX(0%);
+      }
+    
+      .right-container {
+        position: revert;
+        height: auto;
+        width: 100%;
+        padding: 3rem 2rem;
+        display: flex;
+      }
+    
+      .images-wrapper {
+        display: none;
+      }
+    
+      .text-slider {
+        width: 100%;
+      }
+    
+}
+
+@media (max-width: 530px) {
+    main {
+      padding: 1rem;
+    }
+  
+    .box {
+      border-radius: 2rem;
+    }
+  
+    .inner-box {
+      padding: 1rem;
+    }
+  
+    .right-container {
+      padding: 1.5rem 1rem;
+      border-radius: 1.6rem;
+    }
+  
+    .text-wrap {
+      margin-bottom: 1rem;
+    }
+  
+    .text-group h2 {
+      font-size: 1.2rem;
+    }
+  
+    form {
+      padding: 1rem 2rem 1.5rem;
+    }
+    .text-wrap{
+        max-height: 2.2vw;
+        overflow: hidden;
+    }
+    
+       
+
+    .bullets span{
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #aaa;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    .bullets span.active{
+        width: 1rem;
+        background-color: #000;
+        border-radius: 1vw;
+    }
 }

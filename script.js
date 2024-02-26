@@ -28,7 +28,7 @@ let moveBullets = function(){
   currentImage.classList.add('show');
 
   let textSlider = document.querySelector('.text-group');
-  textSlider.style.transform = `translateY(${-(index - 1) * 2 }vw)`
+  textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`
 
 
   console.log(index);
