@@ -14,34 +14,29 @@ inputs.forEach((inp) => {
   });
 });
 
-toggleBtn.forEach((btn ) => {
-    btn.addEventListener('click',() => {
-        main.classList.toggle('sign-up-mode');
-    });
+toggleBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    main.classList.toggle("sign-up-mode");
+  });
 });
 
-let moveBullets = function(){
+let moveBullets = function () {
   let index = this.dataset.value;
   console.log(index);
-  let currentImage = document.querySelector(`.img-${index}`)
-  image.forEach((img) => img.classList.remove('show'));
-  currentImage.classList.add('show');
+  let currentImage = document.querySelector(`.img-${index}`);
+  image.forEach((img) => img.classList.remove("show"));
+  currentImage.classList.add("show");
 
-  let textSlider = document.querySelector('.text-group');
-  textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`
-
+  let textSlider = document.querySelector(".text-group");
+  textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
 
   console.log(index);
-  bullets.forEach(bull => {
-    bull.classList.remove('active')
+  bullets.forEach((bull) => {
+    bull.classList.remove("active");
   });
-  this.classList.add('active')
+  this.classList.add("active");
 };
 
-
-
-
-
-bullets.forEach(bull => {
-  bull.addEventListener('click', moveBullets)
+bullets.forEach((bull) => {
+  bull.addEventListener("click", moveBullets);
 });

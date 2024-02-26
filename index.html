@@ -5,103 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Templates</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="main">
-
       <!-- ---------------- Template - 1 ------------------------------------- -->
 
       <section class="Template-1">
-
         <div class="wrapper">
           <div class="container">
             <div class="inner-box">
+              <div class="left-container">
+                <form
+                  action="index.html"
+                  autocomplete="off"
+                  class="sign-in-form"
+                >
+                  <div class="logo">
+                    <img src="asset/logo.png" alt="LOGO" />
+                    <h3>easyclass</h3>
+                  </div>
 
-                <div class="left-container">
-                    <form action="index.html" autocomplete="off" class="sign-in-form">
+                  <div class="heading">
+                    <h1>Welcome Back</h1>
+                    <p>
+                      Not registered yet?
+                      <b><a href="#" class="toggle">Sign up</a></b>
+                    </p>
+                  </div>
 
-                        <div class="logo">
-                            <img src="asset/logo.png" alt="LOGO">
-                            <h3>easyclass</h3>
-                        </div>
+                  <div class="form-content">
+                    <div class="input-wrap">
+                      <input
+                        type="text"
+                        minlength="4"
+                        class="input-feild"
+                        autocomplete="off"
+                        required
+                      />
+                      <label class="input-lable">Name</label>
+                    </div>
+                    <div class="input-wrap">
+                      <input
+                        type="password"
+                        minlength="4"
+                        class="input-feild"
+                        autocomplete="off"
+                        required
+                      />
+                      <label class="input-lable">Password</label>
+                    </div>
+                    <input type="submit" value="Sign In" class="sign-in-btn" />
+                    <p class="forgot-pass-txt">
+                      Frogotten your password or your Login details?<a
+                        href="#"
+                        class="toggle"
+                      >
+                        Get help</a
+                      >
+                      signin in
+                    </p>
+                  </div>
+                </form>
 
-                        <div class="heading">
-                            <h1>Welcome Back</h1>
-                            <p>Not registered yet? <b><a href="#" class="toggle">Sign up</a></b></p>
-                        </div>
+                <form
+                  action="index.html"
+                  autocomplete="off"
+                  class="sign-up-form"
+                >
+                  <div class="logo">
+                    <img src="asset/logo.png" alt="LOGO" />
+                    <h3>easyclass</h3>
+                  </div>
 
-                        <div class="form-content">
-                            <div class="input-wrap">
-                                <input type="text" minlength="4"  class="input-feild" autocomplete="off" required>
-                                <label  class="input-lable">Name</label>
-                            </div>
-                            <div class="input-wrap">
-                                <input type="password" minlength="4"  class="input-feild" autocomplete="off" required>
-                                <label  class="input-lable">Password</label>
-                            </div>
-                            <input type="submit" value="Sign In" class="sign-in-btn">
-                            <p class="forgot-pass-txt">Frogotten your password or your Login details?<a href="#" class="toggle"> Get help</a> signin in</p>
-                        </div>
-                    </form>
+                  <div class="heading">
+                    <h1>Get Started</h1>
+                    <p>
+                      Already have an account?
+                      <b><a href="#" class="toggle">Sign in</a></b>
+                    </p>
+                  </div>
 
-                    <form action="index.html" autocomplete="off" class="sign-up-form">
+                  <div class="form-content">
+                    <div class="input-wrap">
+                      <input
+                        type="text"
+                        minlength="4"
+                        class="input-feild"
+                        autocomplete="off"
+                        required
+                      />
+                      <label class="input-lable">Name</label>
+                    </div>
+                    <div class="input-wrap">
+                      <input
+                        type="email"
+                        minlength="4"
+                        class="input-feild"
+                        autocomplete="off"
+                        required
+                      />
+                      <label class="input-lable">Email</label>
+                    </div>
+                    <div class="input-wrap">
+                      <input
+                        type="password"
+                        minlength="4"
+                        class="input-feild"
+                        autocomplete="off"
+                        required
+                      />
+                      <label class="input-lable">Password</label>
+                    </div>
+                    <input type="submit" value="Sign In" class="sign-up-btn" />
+                    <p class="forgot-pass-txt2">
+                      By singning up, I agree to the
+                      <a href="#" class="toggle toggle2"> Terms of Services </a
+                      >and
+                      <a href="" class="toggle toggle2"> Privacy Policy</a>
+                      signin in
+                    </p>
+                  </div>
+                </form>
+              </div>
 
-                        <div class="logo">
-                            <img src="asset/logo.png" alt="LOGO">
-                            <h3>easyclass</h3>
-                        </div>
-
-                        <div class="heading">
-                            <h1>Get Started</h1>
-                            <p>Already have an account? <b><a href="#" class="toggle">Sign in</a></b></p>
-                        </div>
-
-                        <div class="form-content">
-                            <div class="input-wrap">
-                                <input type="text" minlength="4"  class="input-feild" autocomplete="off" required>
-                                <label  class="input-lable">Name</label>
-                            </div>
-                            <div class="input-wrap">
-                                <input type="email" minlength="4"  class="input-feild" autocomplete="off" required>
-                                <label  class="input-lable">Email</label>
-                            </div>
-                            <div class="input-wrap">
-                                <input type="password" minlength="4"  class="input-feild" autocomplete="off" required>
-                                <label  class="input-lable">Password</label>
-                            </div>
-                            <input type="submit" value="Sign In" class="sign-up-btn">
-                            <p class="forgot-pass-txt2">By singning up, I agree to the
-                            <a href="#" class="toggle toggle2"> Terms of Services </a>and 
-                            <a href="" class="toggle toggle2"> Privacy Policy</a> signin in</p>
-                        </div>
-                    </form>
+              <div class="right-container">
+                <div class="image-wrapper">
+                  <img src="asset/image1.png" class="image img-1 show" alt="" />
+                  <img src="asset/image2.png" class="image img-2" alt="" />
+                  <img src="asset/image3.png" class="image img-3" alt="" />
                 </div>
 
-                <div class="right-container">
-                    <div class="image-wrapper">
-                        <img src="asset/image1.png" class="image img-1 show" alt="">
-                        <img src="asset/image2.png" class="image img-2" alt="">
-                        <img src="asset/image3.png" class="image img-3" alt="">
+                <div class="text-slider">
+                  <div class="text-wrap">
+                    <div class="text-group">
+                      <h2>Create your own cources</h2>
+                      <h2>Customize as you like</h2>
+                      <h2>Invite student to your class</h2>
                     </div>
-
-                    <div class="text-slider">
-                        <div class="text-wrap">
-                            <div class="text-group">
-                                <h2>Create your own cources</h2>
-                                <h2>Customize as you like</h2>
-                                <h2>Invite student to your class</h2>
-                            </div>
-                        </div>
-                        <div class="bullets">
-                            <span class="active" data-value="1"></span>
-                            <span data-value="2"></span>
-                            <span data-value="3"></span>
-                        </div>
-                    </div>
+                  </div>
+                  <div class="bullets">
+                    <span class="active" data-value="1"></span>
+                    <span data-value="2"></span>
+                    <span data-value="3"></span>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
