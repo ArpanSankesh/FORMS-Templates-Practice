@@ -29,6 +29,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 .Template-1 input{
@@ -38,7 +39,7 @@ section{
 .container{
     position: relative;
     width: 100%;
-    max-width: 70vw;
+    max-width: 1020px;
     height: 80vh;
     border-radius: 3vw;
     background-color: #fff;
@@ -60,7 +61,7 @@ section{
     left:0;
     width: 45%;
     height: 100%;
-    /* padding: 4vw; */
+    padding: 4vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -190,20 +191,12 @@ form.sign-up-form{
 .forgot-pass-txt{
     font-size: 0.7rem;
     color: #bababa;
-    line-height: 1.4vw;
 }
 
 
 /* -------------   SIGN UP------------------------ */
 
-.sign-up-form{
-    max-width: 300px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+
 
 .sign-up-btn{
     width: 100%;
@@ -222,15 +215,15 @@ form.sign-up-form{
 }
 
 .forgot-pass-txt2{
-    font-size: 0.8vw;
+    font-size: 0.7rem;
     color: #bababa;
-    line-height: 1vw;
 }
 
 .toggle2{
     color: #bababa;
     transition: 0.3s;
     font-weight: 500;
+    text-decoration: underline;
 }
 
 .toggle2:hover{
@@ -358,7 +351,7 @@ form.sign-up-form{
 @media (max-width:850px) {
     .container{
         height: auto;
-        max-width: 60vw;
+        max-width:550px ;
         overflow: hidden;
     }
 
@@ -423,6 +416,9 @@ form.sign-up-form{
       .text-slider {
         width: 100%;
       }
+      .left-container{
+        padding: 0;
+    }
     
 }
 
@@ -439,6 +435,8 @@ form.sign-up-form{
       padding: 1rem;
     }
   
+    
+
     .right-container {
       padding: 1.5rem 1rem;
       border-radius: 1.6rem;
@@ -456,24 +454,25 @@ form.sign-up-form{
       padding: 1rem 2rem 1.5rem;
     }
     .text-wrap{
-        max-height: 2.2vw;
+        max-height: 3vw;
         overflow: hidden;
     }
     
-
     .bullets span{
-        display: block;
         width: 0.5rem;
         height: 0.5rem;
-        background-color: #aaa;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 0.4s;
     }
-    
+
     .bullets span.active{
-        width: 1rem;
-        background-color: #000;
+        width: 2vw;
         border-radius: 1vw;
+    }
+    .text-group h2 {
+        line-height: 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+      .left-container{
+        padding: 0;
     }
 }
