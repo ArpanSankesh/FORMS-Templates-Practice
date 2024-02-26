@@ -1,6 +1,6 @@
 const inputs = document.querySelectorAll(".input-feild");
-const toggle_btn = document.querySelectorAll(".toogle");
-const main = document.querySelectorAll(".main");
+const toggle_btn = document.querySelectorAll(".toggle");
+const main = document.querySelector(".wrapper");
 
 inputs.forEach((inp) => {
   inp.addEventListener("focus", () => {
@@ -12,8 +12,8 @@ inputs.forEach((inp) => {
   });
 });
 
-toggle_btn.forEach((toggle ) => {
-    toggle.addEventListener('click',() => {
-        main.classList.add('sign-up-mode')
-    })
-})
+toggle_btn.forEach((btn ) => {
+    btn.addEventListener('click',() => {
+        main.classList.toggle('sign-up-mode');
+    });
+});
